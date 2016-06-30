@@ -1,10 +1,24 @@
 * {
-	font-family: Helvetica, Arial, sans-serif;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.alignChildren {
+    font-size: 0;
+}
+
+.alignChildren > * {
+    display: inline-block;
+    font-size: medium;
+    vertical-align: top;
+}
+
+
 h1 {
-	font-size: 300px;
-	text-align: center;
-	color: fuchsia;
+  font-size: 300px;
+  text-align: center;
+  color: fuchsia;
 }

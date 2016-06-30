@@ -1,5 +1,7 @@
-const React = require('react'),
-	ReactDOM = require('react-dom')
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Router, Route, Link, browserHistory } from 'react-router'
+import backbone from 'backbone';
 
 const app = function() {
 
@@ -9,7 +11,17 @@ const app = function() {
 		}
 	})
 
-	ReactDOM.render(<Header/>,document.querySelector('.container'))
+	ReactDOM.render((
+    <Router history={browserHistory}>
+      <Route path='/' component={Header} />
+    </Router>
+    ), document.querySelector('.container'));
 }
 
 app()
+
+
+
+
+
+
