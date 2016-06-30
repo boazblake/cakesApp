@@ -4,9 +4,7 @@ import filepickerWrapper from './filePicker'
 import FileStackUpload from './_fileUpload'
 import Secrets from '../../secrets'
 import Moment from 'moment'
-import Description from './description'
-
-
+import { Description, FileName } from './description'
 
 filepickerWrapper()
 
@@ -25,16 +23,22 @@ class Admin extends React.Component {
 
   _handleAddDescription(evt) {
     let descriptionforImage = evt.target.value
-    console.log('descriptionforImage', descriptionforImage)
     this.setState({
       descriptionforImage
     })
   }
 
+  _handleAddFileName(evt) {
+    let imageName = evt.target.value
+    this.setState({
+      imageName
+    })
+  }
 
   _createRecord(){
     let productData =  this.state.uploadedBlob
     productData.description = this.state.descriptionforImage
+    productData.fileName = this.state.imageName
  
     this._uploadToFileStack(
       this.state.uploadedImgEl, 
@@ -71,9 +75,8 @@ class Admin extends React.Component {
     productDataforDB.name = Blob.filename;
     productDataforDB.uploadDate = now;
     productDataforDB.description = productData.description;
-    console.log('productData for mongoDB', productData);
-    console.log('productDataforDB', productDataforDB);
-    console.log('Blob', Blob);
+    productDataforDB.fileName = productData.fileName;
+    console.log('productData for mongoDB', productDataforDB);
   }
 
   render(){
@@ -81,6 +84,7 @@ class Admin extends React.Component {
       <div>
         <h1>Upload Your stuff here!</h1>
         <Description addDescription={this._handleAddDescription.bind(this)}/>
+        <FileName addFileName={this._handleAddFileName.bind(this)}/>
         <FileStackUpload onSubmit={this._createRecord.bind(this)} onUpload={this._handleImgUpload.bind(this)}/>
         <div id='previewImg'></div>
       </div>

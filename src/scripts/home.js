@@ -8,10 +8,10 @@ class Home extends React.Component {
 
     return (
       <div id="splashPage" className="container-fluid component layer">
-        <img className="animated slideInRight" id="logo" src='./assets/images/logo_pic.png'/>
+        <img className="animated slideInRight" id="logo" src='./images/logo_pic.png'/>
         <h1 className="animated zoomIn" id="title">The Flour Girl Cake Company</h1>
         <About />
-        <img className="animated slideInLeft" id="girl" src='./assets/images/french-girl-in-cafe.jpg'/>
+        <img className="animated slideInLeft" id="girl" src='./images/french-girl-in-cafe.jpg'/>
       </div>
     )
   }

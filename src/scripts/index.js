@@ -5,8 +5,6 @@ import backbone from 'backbone';
 import App from './app';
 import Admin from './admin/admin';
 
-const Horizon = require('@horizon/client');
-const horizon = Horizon({ authType: 'unauthenticated' });
 
 
 ReactDOM.render((

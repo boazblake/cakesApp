@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-export default class Description extends React.Component {
+export class Description extends React.Component {
   constructor(props){
     super(props);
   }
@@ -11,6 +11,21 @@ export default class Description extends React.Component {
                   placeholder="Enter description here!"
                   onChange={this.props.addDescription}>
         </textarea>
+    )
+  }
+}
+
+export class FileName extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return(
+        <input  type="text" 
+                placeholder="Enter Name / Title here!"
+                onChange={this.props.addFileName}>
+        </input>
     )
   }
 }

@@ -7,23 +7,23 @@ let Icon = (iconUrl, iconLink) => {
 
 let socialMediaIconArray = [
   {
-    link:'../assets/images/facebook.png',
+    link:'../images/facebook.png',
     url:'https://www.facebook.com/theflourgirlco'
   },
   {
-    link:'../assets/images/instagram.png',
+    link:'../images/instagram.png',
     url:'https://www.instagram.com'
   },
   {
-    link:'../assets/images/pintrest.png',
+    link:'../images/pintrest.png',
     url:'https://www.pintrest.com'
   },  
   {
-    link:'../assets/images/youtube.png',
+    link:'../images/youtube.png',
     url:'https://www.youtube.com'
   },  
   {
-    link:'../assets/images/twitter.png',
+    link:'../images/twitter.png',
     url:'https://www.twitter.com'
   }
 ]

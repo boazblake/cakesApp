@@ -16,9 +16,87 @@ html {
     vertical-align: top;
 }
 
+body {
+  background-image: url('assets/images/bckgrnd.jpg');
+}
 
-h1 {
-  font-size: 30px;
-  text-align: center;
-  color: fuchsia;
+.component {
+  position: relative;
+  height: 150vh;
+}
+
+.layer {
+  border-radius: 20px;
+  width: 60%;
+  display: block;
+  background-color: rgba(236, 240, 241, 1);
+}
+
+.center {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  align-content: center;
+}
+
+.row {
+  display: inline-block;
+  margin: 2%;
+  width: 200px;
+  border-radius: 20px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-size: 2em;
+
+  .show{
+    display:block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #productImage {
+    width: 100%;
+  }
+}
+
+#splashPage{
+  #logo{
+    width:300px;
+    display: block;
+  }
+
+  #girl{
+    width:300px;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  #title{
+    text-align:center;
+    color:pink;
+    display: block;
+    font-family: Frijole;
+    font-size: 50px;
+  }  
+}
+
+.imgBox{
+  position: relative;
+
+  .heart{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  button:focus {outline:0 !important;}
+}
+
+.aboutPage {
+  background-image: url('./assets/images/about_pic.jpg');
+  background-repeat: no-repeat;
+  width: 20%;
 }
