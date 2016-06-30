@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, Link, browserHistory } from 'react-router'
 import backbone from 'backbone';
+import Admin from './admin/admin';
 
 const app = function() {
 
@@ -13,7 +14,7 @@ const app = function() {
 
 	ReactDOM.render((
     <Router history={browserHistory}>
-      <Route path='/' component={Header} />
+      <Route path='/' component={Admin} />
     </Router>
     ), document.querySelector('.container'));
 }
