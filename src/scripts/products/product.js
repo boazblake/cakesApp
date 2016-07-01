@@ -17,11 +17,6 @@ export default class Product extends Component {
     this.handleShowDescription = this.handleShowDescription.bind(this);
   }
 
-  componentWillMount(props){
-    console.log('products mounted')
-    console.log('this.props.product', this.props.product)
-  }
-
   handleOnSelect() {
     let selected = {
         id:this.props.product._id,
@@ -72,7 +67,7 @@ export default class Product extends Component {
           <p className="lead">{this.props.product.description}</p>
         </div>
         <div className="col-xs-2 left">
-          <RemoveProduct selectionStatus={this.state.productStatus} id={this.props.product.id}/>
+          <RemoveProduct selectionStatus={this.state.productStatus} id={this.props.product._id}/>
         </div>
       </div>
     );

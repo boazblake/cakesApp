@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//import database
-// const jensCakes = horizon('jensCakes');
 
 export default class RemoveProduct extends React.Component {
   constructor(props){
@@ -11,9 +9,10 @@ export default class RemoveProduct extends React.Component {
   }
 
   handleRemoveProduct() {
-  //   console.log(this.props.id)
-  //   let removeProductbyId = this.props.id
-  //   //REMOVE FROM DB jensCakes.remove(removeProductbyId).subscribe((removeProductbyId) => { console.log('removeProductbyId removed>>', removeProductbyId) })
+    console.log(this.props.id)
+    let removeProductbyId = this.props.id
+    // REMOVE FROM DB
+    
   }
 
   render(){

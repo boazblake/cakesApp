@@ -18,7 +18,6 @@ export default class SelectedProduct extends React.Component {
 
   render(){
     let fontColor = (this.props.productStatus) ? '#c0392b' : '#bdc3c7';
-    console.log('fontColor', fontColor, 'product slected: ', (this.props.productStatus) )
 
     let divStyle =  {
       color: fontColor
