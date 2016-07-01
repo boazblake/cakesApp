@@ -31,7 +31,8 @@ class App extends React.Component {
 
 	ReactDOM.render((
     <Router history={browserHistory}>
-      <Route path='/' component={Admin} />
+      <Route path='/' component={App} />
+      <Route path='/admin' component={Admin} />
     </Router>
     ), document.querySelector('.app'));
 }

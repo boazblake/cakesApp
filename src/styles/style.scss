@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-image: url('assets/images/bckgrnd.jpg');
+  background-image: url('./images/bckgrnd.jpg');
 }
 
 .component {
@@ -39,6 +39,14 @@ body {
   align-content: center;
 }
 
+.show{
+  display:block;
+}
+
+.hide {
+  display: none;
+}
+
 .row {
   display: inline-block;
   margin: 2%;
@@ -47,14 +55,6 @@ body {
   background-color: #2c3e50;
   color: #ecf0f1;
   font-size: 2em;
-
-  .show{
-    display:block;
-  }
-
-  .hide {
-    display: none;
-  }
 
   #productImage {
     width: 100%;
@@ -83,6 +83,11 @@ body {
   }  
 }
 
+#messageContainer {
+  background-color: rgba(236, 240, 241,1.0);
+}
+
+
 .imgBox{
   position: relative;
 
@@ -96,7 +101,6 @@ body {
 }
 
 .aboutPage {
-  background-image: url('./assets/images/about_pic.jpg');
+  background-image: url('./images/about_pic.jpg');
   background-repeat: no-repeat;
-  width: 20%;
 }
