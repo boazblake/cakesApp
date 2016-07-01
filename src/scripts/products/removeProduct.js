@@ -10,11 +10,11 @@ export default class RemoveProduct extends React.Component {
     this.handleRemoveProduct = this.handleRemoveProduct.bind(this)
   }
 
-  // handleRemoveProduct() {
+  handleRemoveProduct() {
   //   console.log(this.props.id)
   //   let removeProductbyId = this.props.id
   //   //REMOVE FROM DB jensCakes.remove(removeProductbyId).subscribe((removeProductbyId) => { console.log('removeProductbyId removed>>', removeProductbyId) })
-  // }
+  }
 
   render(){
     return(

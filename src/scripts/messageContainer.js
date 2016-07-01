@@ -49,7 +49,7 @@ class MessageContainer extends React.Component {
             onSubmit={this.sendMessage}>
         <h3>Send Me a Message!</h3>
         <div id='messageContainer'>
-          <input onChange={this.handleName} type="text" placeholder="your name"/>
+          <input onChange={this.handleName} type="text" placeholder="your name here now"/>
           <input onChange={this.handleEmail} type="text" placeholder="your email" />
           <textArea onChange={this.handleMessage} rows="4" cols="25" placeholder="your message" />
         </div>

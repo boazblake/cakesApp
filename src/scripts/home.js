@@ -1,6 +1,6 @@
 import React from 'react'
 import About from './about';
-import MessageContainer from './MessageContainer';
+import MessageContainer from './messageContainer';
 
 
 class Home extends React.Component {

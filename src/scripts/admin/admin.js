@@ -5,6 +5,7 @@ import FileStackUpload from './_fileUpload'
 import Secrets from '../../secrets'
 import Moment from 'moment'
 import { Description, FileName } from './description'
+import $ from 'jquery'
 
 filepickerWrapper()
 
@@ -76,6 +77,19 @@ class Admin extends React.Component {
     productDataforDB.uploadDate = now;
     productDataforDB.description = productData.description;
     productDataforDB.fileName = productData.fileName;
+
+    $.ajax({
+      url: '/api/v1/products',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      data: JSON.stringify(productDataforDB)
+    }).then((data) => {
+      console.log('data', data)
+    }).fail((err) => {
+      console.log('err', err)
+    })
     console.log('productData for mongoDB', productDataforDB);
   }
 

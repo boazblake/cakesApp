@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Moment from 'moment';
 import SelectedProduct from './selectedProduct';
 import RemoveProduct from './removeProduct';
-//import database
 
 export default class Product extends Component {
   constructor(props){
@@ -18,14 +17,19 @@ export default class Product extends Component {
     this.handleShowDescription = this.handleShowDescription.bind(this);
   }
 
+  componentWillMount(props){
+    console.log('products mounted')
+    console.log('this.props.product', this.props.product)
+  }
+
   handleOnSelect() {
     let selected = {
-        id:this.props.product.id,
+        id:this.props.product._id,
         productSelected: false
       }
 
     let unSelected = {
-      id:this.props.product.id,
+      id:this.props.product._id,
       productSelected: true
     }
 
